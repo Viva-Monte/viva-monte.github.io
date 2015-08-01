@@ -1,0 +1,20 @@
+<footer class="site-footer">
+  <div class="footer-top-side"></div>
+  <div class="footer-top"></div>
+  <div class="footer-top-side"></div>
+  <div class="footer-wrapper">
+    <div class="footer-text">
+        <p>Created by <a href="#">Alessandro Zanella</a> and <a href="http://bujuhu.at">Juri Schreib</a></p>
+    </div>
+    <div class="footer-card">
+      <ul class="sidemap">
+        {% assign pages = site.pages | where: "lang","ro" %}
+        {% for page in pages %}
+          <li>
+            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+  </div>
+</div>
+</footer>

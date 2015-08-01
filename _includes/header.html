@@ -1,0 +1,28 @@
+<header class="site-header">
+
+  <div class="nav-wrapper">
+    <div class="title-wrapper">
+      <div class="site-title">
+        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+      </div>
+    </div>
+    <div class="nav-accent-wrap">
+      <div class="nav-accent"></div>
+    </div>
+
+    <nav class="site-nav">
+      <div class="nav-left">
+      {% assign pages = site.pages | where: "lang","ro" %}
+      {% for page in pages %}
+          {% assign half_length = forloop.length | divided_by: 2 %}
+          {% if forloop.index0 == half_length %}
+            </div>
+            <div class="nav-right">
+          {% endif %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% endfor %}
+      </div>
+    </nav>
+  </div>
+  <!--script src="assets/js/header.js" /-->
+</header>
