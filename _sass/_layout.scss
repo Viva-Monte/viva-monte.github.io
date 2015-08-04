@@ -218,6 +218,7 @@
   &:nth-child(4n+2), &:nth-child(4n+3) {
     background-color: #666;
     .card-title, .card-title:visited, .card-text {
+      text-align: center;
       color: #fff;
     }
   }
@@ -229,7 +230,6 @@
 .card-title, .card-title:visited {
   font-size: 1.8em;
   color: #000;
-  text-align: center;
   margin: 15px 0;
   display: block;
 }
