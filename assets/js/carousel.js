@@ -30,8 +30,8 @@ function Carousel (settings) {
 		function animateElement () {
 
 			for(var i = 0; (el = wrap.children.item(i)) != null; i++) {
-				var scale = - Math.pow((( el.offsetLeft - wrap.scrollLeft ) / wrap.offsetWidth) -.4 , 2) +1 ;
-				var opacity = -1.5 * Math.pow((( el.offsetLeft - wrap.scrollLeft ) / wrap.offsetWidth) -.4 , 2) +1 ;
+				var scale = - Math.pow((( el.offsetLeft - wrap.scrollLeft - wrap.offsetLeft ) / wrap.offsetWidth) -.4 , 2) +1 ;
+				var opacity = -1.5 * Math.pow((( el.offsetLeft - wrap.scrollLeft - wrap.offsetLeft ) / wrap.offsetWidth) -.4 , 2) +1 ;
 				el.style.webkitTransform =
 				el.style.MozTransform =
 				el.style.msTransform =
