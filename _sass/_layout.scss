@@ -14,6 +14,7 @@
     left: 50%;
 }
 .nav-wrapper {
+  min-width: 800px;
   max-width: 70%;
   @extend %clearfix;
   margin: 0 auto;
@@ -54,6 +55,7 @@
     }
     a:hover {
       color: #ffa;
+      text-decoration: none;
     }
 }
 
@@ -71,6 +73,9 @@
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
+        }
+        &:hover {
+          text-decoration: none;
         }
     }
     .page-link:hover {
@@ -185,7 +190,7 @@
 
 .page-content {
     padding: $spacing-unit 0;
-    background: url(/assets/img/outdoor1.jpg) repeat;
+    background: url(/assets/img/background.jpg) repeat;
     background-attachment: fixed;
 }
 
