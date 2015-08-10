@@ -6,15 +6,29 @@
     <div class="footer-text">
         <p>Created by <a href="#">Alessandro Zanella</a> and <a href="http://bujuhu.at">Juri Schreib</a></p>
     </div>
-    <div class="footer-card">
+  <div class="footer-card">
+      <p class="card-title">Sitemap</p>
       <ul class="sidemap">
-        {% assign pages = site.pages | where: "lang","ro" %}
+        {% assign pages = site.pages | where: "lang", page.lang %}
         {% for page in pages %}
+            {% if image.hidden %}
+            {% else %}
           <li>
             <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           </li>
+          {% endif %}
         {% endfor %}
       </ul>
   </div>
+  <div class="footer-card">
+    <p class="card-title">Language</p>
+    <ul class="sidemap">
+      <li>
+      <a class="page-link" href="{{ site.baseurl }}/en/">Englisch</a>
+      </li>
+      <li>
+      <a class="page-link" href="{{ site.baseurl }}/">Românește</a>
+      </li>
+    </ul>
 </div>
 </footer>

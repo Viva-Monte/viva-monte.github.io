@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Nunti
+title: Evenimente / Nunti
 permalink: /ro/wedding/
 lang: ro
 image: outdoor3.jpg

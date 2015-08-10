@@ -1,0 +1,15 @@
+  {% assign pages = site.pages | where: "lang", page.lang %}
+  {% for page in pages %}
+    {% if page.hidden %}
+    {% else %}
+    <div class="card">
+      {% if page.image %}
+        <div class="card-preview-image">
+          <img alt="{{ page.title }}" src="/assets/img/{{ page.image }}" />
+        </div>
+      {% endif %}
+      <a class="card-title" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      <p class="card-text">{{ page.excerpt }}</p>
+    </div>
+    {% endif %}
+  {% endfor %}

@@ -12,14 +12,17 @@
 
     <nav class="site-nav">
       <div class="nav-left">
-      {% assign pages = site.pages | where: "lang","ro" %}
+      {% assign pages = site.pages | where: "lang", page.lang %}
       {% for page in pages %}
           {% assign half_length = forloop.length | divided_by: 2 %}
           {% if forloop.index0 == half_length %}
             </div>
             <div class="nav-right">
           {% endif %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% if page.hidden %}
+          {% else %}
+            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
       {% endfor %}
       </div>
     </nav>
