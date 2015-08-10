@@ -151,7 +151,6 @@
 	white-space: nowrap;
 }
 .carousel-item{
-  background-color: red;
   margin: 5px;
   height: 450px;
   width: auto;
@@ -218,7 +217,6 @@
   &:nth-child(4n+2), &:nth-child(4n+3) {
     background-color: #666;
     .card-title, .card-title:visited, .card-text {
-      text-align: center;
       color: #fff;
     }
   }
@@ -228,6 +226,7 @@
   overflow: hidden;
 }
 .card-title, .card-title:visited {
+  text-align: center;
   font-size: 1.8em;
   color: #000;
   margin: 15px 0;
@@ -238,6 +237,7 @@
   color: #888;
 }
 .card-text {
+  text-align: center;
   font-size: 1.2em;
 }
 
