@@ -1,3 +1,5 @@
+- name: indoor
+  images:
   - alt: lobby
     img: indoor1.jpg
 
@@ -15,18 +17,20 @@
 
   - alt: event hall
     img: indoor6.jpg
-
-  - alt: construction site
-    img: outdoor1.jpg
+- name: building
+  images:
+  - alt: outside view
+    img: building1.jpg
 
   - alt: areal overview
-    img: outdoor2.jpg
+    img: building2.jpg
 
   - alt: garden
-    img: outdoor3.jpg
+    img: building3.jpg
+- name: sport
+  images:
+  - alt: football field
+    img: sport1.jpg
 
-  - alt: lawn
-    img: outdoor4.jpg
-
-  - alt: lawn
-    img: outdoor5.jpg
+  - alt: football field
+    img: sport2.jpg

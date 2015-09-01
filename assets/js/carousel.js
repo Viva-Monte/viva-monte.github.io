@@ -7,7 +7,6 @@ function Carousel (settings) {
 
 		this.wrap = settings.wrappingElement;
 		var wrap = this.wrap;
-    wrap.scrollLeft = 2795;
 
 		HTMLElement.prototype.completeWidth = function() {
 			var style = window.getComputedStyle(this);
@@ -76,6 +75,6 @@ moveRight.onmousedown = function() {
 	}, 1);
 };
 
-moveLeft.onmouseup = moveRight.onmouseup = function (){
+moveLeft.onmouseup = moveRight.onmouseup = moveLeft.onmouseout = moveRight.onmouseout = function (){
 	clearInterval(currentAction);
 };

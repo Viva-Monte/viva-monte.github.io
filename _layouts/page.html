@@ -1,15 +1,21 @@
 ---
 layout: default
 ---
+{% if page.gallery %}
 <div class="carousel" id="carousel">
-  {%  for image in site.data.carousel %}
-    <img class="carousel-item" alt="{{ image.alt }}"  src="/assets/img/{{ image.img }}" />
+  {% for gallery in site.data.galleries %}
+    {% if gallery.name == page.gallery %}
+      {%  for image in gallery.images %}
+        <img class="carousel-item" alt="{{ image.alt }}"  src="/assets/img/{{ image.img }}" />
+      {% endfor %}
+    {% endif %}
   {% endfor %}
 </div>
 <div class="carousel-controls">
   <a id="carousel-left" class="carousel-control">◀</a>
   <a id="carousel-right" class="carousel-control">▶</a>
 </div>
+{% endif %}
 
 <div class="post">
 
@@ -20,5 +26,5 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
-  <script  type="text/javascript" src=/assets/js/carousel.js ></script>
 </div>
+<script  type="text/javascript" src=/assets/js/carousel.js ></script>
