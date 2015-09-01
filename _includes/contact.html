@@ -2,9 +2,11 @@
   <a class="card-title">Contact</a>
   <p class="card-text">If you need more information or any help please contact us</p>
   <p class="card-header">e-mail</p>
-  <p class="card-text"><a href=mailto:office@casaalesic.com>office@casaalesic.com</a></p>
+  <p class="card-text"><a href="mailto:{{ site.mail }}">{{ site.mail }}</a></p>
   <p class="card-header">tel.nr</p>
-  <p class="card-text">+43224321145</p>
+  <p class="card-text">{{ site.tel }}</p>
+  <p class="card-header">Facebook</p>
+  <p class="card-text"><a href="{{site.facebook}}">{{site.facebook}}</a>
 </div>
 <div class="card">
   <iframe

@@ -14,6 +14,7 @@
     left: 50%;
 }
 .nav-wrapper {
+  position: relative;
   min-width: 800px;
   max-width: 70%;
   @extend %clearfix;
@@ -104,10 +105,6 @@
     }
     .footer-top {
       width: 150px;
-
-      -webkit-clip-path: polygon(0% 0%, 50% 100%, 101% 0, 101% 100%, 0 100%);
-      clip-path: polygon(0% 0%, 35% 0, 51% 24%, 69% 0, 100% 0%, 100% 100%, 0 100%);
-      background-color: $background-color;
     }
     .footer-wrapper {
       @extend %clearfix;
@@ -150,8 +147,17 @@
 /**
  * Page content
  */
+.carousel, .carousel-controls {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 .carousel {
+
   height: 500px;
 	overflow: hidden;
 	white-space: nowrap;
