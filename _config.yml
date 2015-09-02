@@ -8,6 +8,6 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://vivamonte.ro" # the base hostname & protocol for your site
 mail: "office@casaalesiv.ro"
 tel: "0040 264 444551"
-facebook: "https://www.facebook.com/pages/VIVA-MONTE-Hotel/444024459136755"
+facebook: "https://www.facebook.com/pages/Vivamonte/1455309254775830"
 # Build settings
 markdown: kramdown

@@ -17,6 +17,7 @@
 
   - alt: event hall
     img: indoor6.jpg
+
 - name: building
   images:
   - alt: outside view
@@ -27,6 +28,13 @@
 
   - alt: garden
     img: building3.jpg
+
+  - alt: bed
+    img: indoor7.jpg
+
+  - alt: table
+    img: indoor8.jpg
+    
 - name: sport
   images:
   - alt: football field
