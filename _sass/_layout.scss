@@ -49,15 +49,6 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     z-index: 1;
-
-    a {
-        text-transform: uppercase;
-        color: #000;
-    }
-    a:hover {
-      color: #ffa;
-      text-decoration: none;
-    }
 }
 
 .site-nav {
@@ -80,7 +71,7 @@
         }
     }
     .page-link:hover {
-      color: #ffa;
+      color: #555;
     }
 }
 
