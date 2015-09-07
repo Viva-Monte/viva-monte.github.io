@@ -14,7 +14,7 @@
       <div class="nav-left">
       {% assign pages = site.pages | where: "lang", page.lang %}
       {% for page in pages %}
-          {% assign half_length = forloop.length | divided_by: 2 %}
+          {% assign half_length = forloop.length | divided_by: 2 | minus: 1 %}
           {% if forloop.index0 == half_length %}
             </div>
             <div class="nav-right">

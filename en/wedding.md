@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Events / Wedding
+title: Events
 lang: en
 image: building3.jpg
 excerpt: "The event/ wedding tent is situated in a special reserved area of the touristic and sport resort VIVAMONTE, on a surface of 400m², surrounded by a generous space near the forrest and a small lake. It has all the sanitary rooms needed in order..."
