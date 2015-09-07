@@ -27,6 +27,7 @@
     position: relative;
     left: -50%;
     transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 .nav-left {
     float: left;
