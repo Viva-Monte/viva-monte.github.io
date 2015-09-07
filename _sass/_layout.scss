@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-    background-color: $brand-color;
+    background-color: #fff;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -15,13 +15,13 @@
 }
 .nav-wrapper {
   position: relative;
-  min-width: 800px;
+  min-width: 1200px;
   max-width: 70%;
   @extend %clearfix;
   margin: 0 auto;
 }
 .nav-accent {
-    background-color: $brand-color;
+    background-color: #fff;
     width: 100px;
     height: 100px;
     position: relative;
@@ -52,7 +52,7 @@
 
     a {
         text-transform: uppercase;
-        color: #fff;
+        color: #000;
     }
     a:hover {
       color: #ffa;
@@ -68,7 +68,7 @@
     }
 
     .page-link {
-        color: #fff;
+        color: #000;
         font-size: 1.5em;
 
         // Gaps between nav items, but not on the first one
